@@ -1,0 +1,19 @@
+.box{
+    background-color: yellow;
+    height: 300px;
+    color: black !important;
+}
+.img-wrap{
+    width: 100%;
+    height: 70%;
+    background-color: green;
+}
+.img-wrap img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
+}
+.box h1{
+    color: black !important;
+}
+ 

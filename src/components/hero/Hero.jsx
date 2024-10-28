@@ -1,9 +1,12 @@
+import Box from '../box/Box'
 import './hero.css'
 
 const Hero = () => {
   return (
     <section className="hero">
-        Hero
+        <Box/>
+        <Box/>
+        <Box/>
     </section>
   )
 }
