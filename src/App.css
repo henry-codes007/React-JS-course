@@ -1,0 +1,7 @@
+.home{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: aquamarine;
+  text-align: center;
+}
