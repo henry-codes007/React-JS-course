@@ -1,15 +1,19 @@
+/* eslint-disable react/prop-types */
 import './box.css'
-import Image1 from '/img1.jpg'
-const Box = () => {
+
+
+const Box = (fufu) => {
+    // console.log(fufu);
+    const {image, name, age, occupation} = fufu
   return (
     <div className='box'>
         <div className='img-wrap'>
-            <img src={Image1} alt="" />
+            <img src={image} alt={name} />
         </div>
         <div>
-            <h1>Jacob Moses</h1>
-            <h3>29 years</h3>
-            <p>Boxer</p>
+            <h1>{name}</h1>
+            <h3>{age}</h3>
+            <p>{occupation}</p>
         </div>
     </div>
   )
