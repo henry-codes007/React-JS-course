@@ -1,7 +1,15 @@
+import Logo from '../logo/Logo'
 import './header.css'
 function Header() {
   return (
-    <div>header</div>
+    <header className='main-header'>
+        <Logo/>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </header>
   )
 }
 
