@@ -2,4 +2,15 @@
     background-color: blue;
     height: 70px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 7.5%;
+}
+
+.main-header ul{
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+    list-style: none;
 }
