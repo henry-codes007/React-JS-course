@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <section className="hero">
         <Box/>
-        <Box/>
-        <Box/>
+        {/* <Box/> */}
+        {/* <Box/> */}
     </section>
   )
 }
