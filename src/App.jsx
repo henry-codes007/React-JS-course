@@ -1,6 +1,7 @@
 import './App.css'
+import Counter from './components/counter/Counter'
 import Header from './components/header/header'
-import Hero from './components/hero/Hero'
+// import Hero from './components/hero/Hero'
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
   return (
     <section className='home'>
      <Header/>
-     <Hero/>     
+     <Counter/>
+     {/* <Hero/>      */}
     </section>
   )
 }

@@ -3,10 +3,23 @@ import './hero.css'
 import Image1 from '/img1.jpg'
 import Image2 from '/img2.jpg'
 import Image3 from '/img3.jpg'
+import { users } from '../../utils/utils'
 
 const Hero = () => {
+  console.log(users);
   return (
     <section className="hero">
+      {
+        users.map((user) => (
+          <Box
+            key={user.id}
+            name={user.name}
+            age={user.age}
+            occupation={user.occupation}
+            image={user.image}
+          />
+        ))        
+      }
         <Box 
             name="Mansa Musa" 
             age={57} 

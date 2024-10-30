@@ -2,9 +2,8 @@
 import './box.css'
 
 
-const Box = (fufu) => {
-    // console.log(fufu);
-    const {image, name, age, occupation} = fufu
+const Box = ({image, name, age, occupation}) => {
+    
   return (
     <div className='box'>
         <div className='img-wrap'>
