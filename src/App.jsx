@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
 import './App.css'
-import Counter from './components/counter/Counter'
+// import Counter from './components/counter/Counter'
 import Header from './components/header/header'
 // import Hero from './components/hero/Hero'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 
 function App() {
@@ -21,11 +25,19 @@ function App() {
   }, []);
 
   return (
-    <section className='home' style={{ backgroundColor: bgColor }}>
-     <Header/>
-     <Counter/>
-     {/* <Hero/>      */}
-    </section>
+    <BrowserRouter>
+      <section className='home' style={{ backgroundColor: bgColor }}>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+       
+       {/* <Counter/> */}
+       {/* <Hero/>      */}
+      </section>
+    </BrowserRouter>
   )
 }
 

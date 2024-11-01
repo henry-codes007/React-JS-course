@@ -1,13 +1,25 @@
 import Logo from '../logo/Logo'
+import { FaGithub } from "react-icons/fa";
 import './header.css'
+import NotificationIcon from '../NotificationIcon';
+import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header className='main-header'>
         <Logo/>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Us</li>
+            <li>
+              <Link to={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link to={"/about"}>About</Link>
+            </li>
+            <li>
+              <Link to={"/contact"}>Contact Us</Link>
+            </li>
+            <i className="fa fa-microphone" aria-hidden="true"></i>
+            <FaGithub/>
+            <NotificationIcon/>
         </ul>
     </header>
   )
