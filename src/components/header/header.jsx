@@ -17,6 +17,9 @@ function Header() {
             <li>
               <Link to={"/contact"}>Contact Us</Link>
             </li>
+            <li>
+              <Link to={"/movies"}>Movies</Link>
+            </li>
             <i className="fa fa-microphone" aria-hidden="true"></i>
             <FaGithub/>
             <NotificationIcon/>
