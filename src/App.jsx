@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import Moviespage from './pages/Moviespage';
+import Layout from './components/layout/Layout';
 
 
 function App() {
@@ -34,6 +35,11 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/movies" element={<Moviespage />} />
+          <Route path='shop' element={<Layout/>}>
+            <Route path="electronics" element={<HomePage/>} />
+            <Route path="clothing" element={<HomePage/>} />
+            <Route path="product/:productId" element={<HomePage/>} />            
+          </Route>
         </Routes>
        
        {/* <Counter/> */}
