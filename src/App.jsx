@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css'
-// import Counter from './components/counter/Counter'
-// import Header from './components/header/header'
-// import Hero from './components/hero/Hero'
+import Counter from './components/counter/Counter'
+import Header from './components/header/header'
+import Hero from './components/hero/Hero'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -35,7 +35,7 @@ function App() {
   return (
     <BrowserRouter>
       <section className='home' style={{ backgroundColor: bgColor }}>
-        {/* <Header/> */}
+        <Header/>
         <Routes>
           <Route path="/" element={<HomePage/>} />          
           <Route path="/about" element={<AboutPage />} />
@@ -55,8 +55,8 @@ function App() {
         </Routes>
         
        
-       {/* <Counter/> */}
-       {/* <Hero/>      */}
+       <Counter/>
+       <Hero/>     
       </section>
     </BrowserRouter>
   )
